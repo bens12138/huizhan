@@ -1,0 +1,63 @@
+1、hz_admin 	管理员表
+
+id    		int(11)		    管理员id
+name    	varchar(255)    管理员姓名
+password    varchar(255)    管理员密码
+add_time	varchar(50)		添加时间 格式为时间戳
+edit_time	varchar(50)		修改时间 格式为时间戳
+is_del		varchar(50)		是否删除 1未删除 0已删除
+status		int(5)			管理员状态 1 启用 0 停用
+
+
+2、hz_info 	站点信息表
+
+id 			int(10)			站点信息id
+title		varchar(255)	名称
+tel			varchar(255)	联系方式
+email		varchar(255)	邮箱
+address		varchar(255)	地址
+
+
+3、hz_nav	导航表
+
+id 			int(10)			导航id
+name 		varchar(50)		导航名称
+add_time 	int(20)			添加时间 格式为时间戳
+edit_time 	int(20)			修改时间 格式为时间戳
+pid 		int(10)			父级id
+status 		int(10)			状态 1 启用 0 停用
+is_del 		int(10)			是否删除 1未删除 0已删除
+sort		int(10)			用来排序的
+
+4、hz_banner	轮播图表
+
+id 			int(11)			轮播图ID
+title		varchar(255)	轮播图标题
+img			varchar(255)	轮播图图片
+edit_time	int(11)			修改时间 格式为时间戳
+
+
+5、hz_column	首页栏目表
+
+id 			int(11)			栏目ID
+title		varchar(255)	栏目标题
+btitle		varchar(255)	栏目副标题
+img			varchar(100)	栏目图片
+pid			int(11)			栏目父级ID
+add_time	int(11)			添加时间 格式为时间戳
+edit_time	int(11)			修改时间 格式为时间戳
+status		int(11)			栏目状态 1 启用 0 停用
+is_del		int(11)			是否删除 1未删除 0已删除
+
+
+6、hz_article文章表
+
+id 			int(11)			文章ID
+img			varchar(100)	文章缩略图
+title		varchar(255)	文章标题
+author		varchar(100)	文章作者
+content		text			文章正文
+pid			int(11)			文章父级ID
+add_time	int(11)			添加时间 格式为时间戳
+edit_time	int(11)			修改时间 格式为时间戳
+is_del		int(11)			是否删除 1未删除 0已删除
